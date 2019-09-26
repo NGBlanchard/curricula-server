@@ -5,8 +5,8 @@ const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const usersRouter = require('./users/users-router')
-// const coursesRouter = require('.courses/courses-router')
-// const blurbsRouter = require('.blurbs/blurbs-router')
+const coursesRouter = require('./courses/courses-router')
+// const blurbsRouter = require('./blurbs/blurbs-router')
 
 const app = express()
 
@@ -18,7 +18,7 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 app.use('/users', usersRouter)
-// app.use('/courses', coursesRouter)
+app.use('/courses', coursesRouter)
 // app.use('/blurbs', blurbsRouter)
 
 app.get('/', (req, res) => {

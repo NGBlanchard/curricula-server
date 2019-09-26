@@ -69,7 +69,7 @@ INSERT INTO courses
   INSERT INTO blurbs
   (content, created_at)
   VALUES
-  ('Has anyone read the new CHris Ware?', '09/24/2019'),
+  ('Has anyone read the new Chris Ware?', '09/24/2019'),
   ('Im looking for ideas on incorporating film into English instruction', '9/21/2019'),
   ('Testing testing 123', '07/19/2019'),
   ('The idea is to use your secret idiosyncratic strength, just exploit the hell out of it, make of it a life, a synthetic reality', '09/12/2019'),
